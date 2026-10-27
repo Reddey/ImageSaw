@@ -8,6 +8,8 @@ A secondary mode, Edge-Detection Mono-Chrome is planned, which will use an algor
 
 Notice: Increasing Size will vertically mirror the image. This is a limitation from the way Info Boxes render text in Gunsaw, as such you may need to vertically mirror your image before conversion. I have figured out a solution for this issue so hopefully if implemented, it will work.
 
+[Keep track of progress in Issues at the to-do list.](https://github.com/Reddey/ImageSaw/issues/1)
+
 Ingame example 1 (Full color, 40k Chars, 470fps stable)
 ![Ingame Example](https://github.com/user-attachments/assets/365299d9-2f01-416d-a5ef-487556461d2a)
 
