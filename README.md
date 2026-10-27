@@ -19,5 +19,5 @@ Ingame example 2 (Full color, multiple images, >150k Chars, 470fps Stable)
 ImageSaw v5 Palette Functionality (Allows for aggressive optimization if so desired)
 ![Technical Screenie](https://github.com/user-attachments/assets/559bdded-c11f-401f-88b9-92cf517d75a9)
 
-ImageSaw v6 Monochrome Edge-Detection mode (Most aggressive optimization, worst image quality.)
+ImageSaw v6 Monochrome Edge-Detection mode (Most aggressive optimization, worst image quality. The example in this picture weighed in at 5000 characters.)
 ![MCED Mode](https://github.com/user-attachments/assets/9038a6e2-9c79-41bb-bda1-ea490a490bdb)
