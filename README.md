@@ -16,5 +16,8 @@ Ingame example 1 (Full color, 40k Chars, 470fps stable)
 Ingame example 2 (Full color, multiple images, >150k Chars, 470fps Stable)
 ![Ingame Example](https://github.com/user-attachments/assets/7a303104-d5a9-446d-82bd-980892880cee)
 
-ImageSaw v5 Palette Functionality (Allows for agressive optimization if so desired)
+ImageSaw v5 Palette Functionality (Allows for aggressive optimization if so desired)
 ![Technical Screenie](https://github.com/user-attachments/assets/559bdded-c11f-401f-88b9-92cf517d75a9)
+
+ImageSaw v6 Monochrome Edge-Detection mode (Most aggressive optimization, worst image quality.)
+![MCED Mode](https://github.com/user-attachments/assets/9038a6e2-9c79-41bb-bda1-ea490a490bdb)
