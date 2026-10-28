@@ -18,3 +18,6 @@ Implemented the Monochrome Edge Detection mode, usable with the --edges argument
 
 # ImageSaw V7-6 (28/10/2026):
 Created and integrated ImageSawGUIv6. Now the 2 are merged under ImageSawV7-6. The GUI provides a graphical interface that can be used in place of the terminal to create images. It contains helpful tooltips and warnings to provide the user with as much help / info as possible from within the program itself. Size argument was tweaked significantly, as it is tied mainly to Line-Height to change aspect ratio. As such, these settings were marked as experimental in the GUI. They should be left at their defaults. In the GUI, a sign size estimator is included, which will tell you an estimate minimum size to set signs to in Gunsaw for the image to fit on them properly. Additionally, a bug was fixed (again) that ocassionally caused images to get vertically mirrored.
+
+# ImageSaw V8-7 (28/10/2026):
+Created a GUI for the web app. First public release. Later on, a standalone program based on ImageSaw V7-6 will be released. Functionally v8-7 is identical to v7-6, with the only major differences being a slight change to the backend converter, and the different GUIs.
