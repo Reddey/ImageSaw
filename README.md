@@ -1,12 +1,14 @@
 # ImageSaw
 A tool used to convert images into ASCII art usable in the Info Boxes available in the Gunsaw Level Editor.
 
-Relies on Python and Pillow. For now, not publicly released.
+Relies on Python, Pillow, and tkinter. For now, not publicly released although it's coming soon!
 
-Currently there is only one mode available, Full Color mode. This allows you to add two or three high detail, full color pictures in near proximity of eachother.
-A secondary mode, Edge-Detection Mono-Chrome is planned, which will use an algorithm to detect edges in uploaded images, and convert the images into a much simpler, less demanding form of ASCII art usable in-game.
+Currently there are two modes available: 
 
-Notice: Increasing Size will vertically mirror the image. This is a limitation from the way Info Boxes render text in Gunsaw, as such you may need to vertically mirror your image before conversion. I have figured out a solution for this issue so hopefully if implemented, it will work.
+Full Color mode. This allows you to add two or three high detail, full color pictures in near proximity of eachother.
+Monochrome Edge-Detection (MCED). Uses an algorithm to detect edges in uploaded images, and converts the images into a much simpler, less demanding form of ASCII art usable in-game.
+
+Notice: The size and line-height arguments are best left untouched! By default, they are configured to generate images at an aspect ratio of 1:1. If changed, you will need to manually calibrate them until the image looks right in-game! If you wish to increase the size of the image in-game, increase the image resolution up to AT MOST 120x120. Anything higher will severely affect performance.
 
 [Keep track of progress in Issues at the to-do list.](https://github.com/Reddey/ImageSaw/issues/1)
 
