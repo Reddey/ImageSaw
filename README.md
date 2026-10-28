@@ -36,3 +36,6 @@ ImageSaw v7-6 features a GUI for the localized program. Eventually post web-rele
 ## ImageSaw v8-7 Web App
 ![Web App for ImageSaw v8-7](https://github.com/user-attachments/assets/c9137e09-89ab-45df-af6c-cc8f60e9dd5b)
 ImageSaw v8-7 in functionality is identical to v7-6. Both have the same relative backend, the main difference being the GUI. 7-6 is a standalone app you can run on your computer, while 8-7 is an online Web App that you can use without downloading any files. No files are uploaded, no files are stored, everything is done locally, so you can trust the images you upload are safely still in your hands.
+
+## ImageSaw v8-7 Web App Released!
+Enjoy! The tool is now publicly and freely available. As mentioned before, everything is ran locally through a web app, so nothing is ever uploaded to any server or online anywhere.
