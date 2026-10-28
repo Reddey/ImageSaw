@@ -15,10 +15,10 @@ Notice: The size and line-height arguments are best left untouched! By default, 
 
 # Development History
 
-## Ingame example 1 (Full color, 40k Chars, 470fps stable)
+## Ingame example 1 (Full color, 40k Chars, 470fps stable) [ImageSaw v3]
 ![Ingame Example](https://github.com/user-attachments/assets/365299d9-2f01-416d-a5ef-487556461d2a)
 
-## Ingame example 2 (Full color, multiple images, >150k Chars, 470fps Stable)
+## Ingame example 2 (Full color, multiple images, >150k Chars, 470fps Stable) [ImageSaw v3]
 ![Ingame Example](https://github.com/user-attachments/assets/7a303104-d5a9-446d-82bd-980892880cee)
 
 ## ImageSaw v5 Palette Functionality (Allows for aggressive optimization if so desired)
