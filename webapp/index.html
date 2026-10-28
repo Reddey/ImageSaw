@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202020">
+  <title>ImageSaw - Reddey says hi!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <div><p class="eyebrow">Powered by Python, Pillow and Pyodide. Special thanks to JohnnyEnglish and u/BaronGunsawFanboy!</p><h1 class="rainbow-title">ImageSaw v8-7</h1>
+      <p>Bringing your favorite images to Gunsaw, while retaining full Vanilla compatibility! (Copyright, Trademark, Rights ReddeyCorp (Not really :3)) Nah but for real, made by Reddey.</p></div>
+      <div class="runtime" id="runtime" role="status" aria-live="polite">Loading Python…</div>
+    </header>
+    <div class="workspace">
+      <section class="panel controls" aria-label="Conversion settings">
+        <h2>Source image</h2>
+        <label class="upload" for="image">Choose an image <small>Supported formats: PNG, JPEG, WebP, BMP, GIF (First frame only)</small></label>
+        <input id="image" type="file" accept="image/*">
+        <p id="file-name" class="muted">No image selected</p>
+        <h2>Conversion settings</h2>
+        <p class="muted hover-hint">For more information, hover over an option.</p>
+        <div class="fields">
+          <div class="field" data-tip="width"><label for="width">Width</label><input id="width" type="number" min="1" max="512" step="1" value="60"></div>
+          <div class="field" data-tip="height"><label for="height">Height</label><input id="height" type="number" min="1" max="512" step="1" value="60"></div>
+          <div class="field" data-tip="size"><label for="size">Size multiplier</label><input id="size" type="number" min="0.01" step="0.05" value="1.5"></div>
+          <div class="field" data-tip="line_height"><label for="line_height">Line height</label><input id="line_height" type="number" min="0.01" step="0.05" value="2.0"></div>
+          <div class="field" data-tip="palette"><label for="palette">Palette</label><input id="palette" type="number" min="0" max="256" step="1" value="16"></div>
+          <div class="field" data-tip="background"><label for="background">Background color</label><div class="color-row"><input id="background" type="text" value="#000000" maxlength="7" spellcheck="false"><input id="color-picker" type="color" value="#000000" aria-label="Pick background color"></div></div>
+        </div>
+        <div class="field checkbox-field" data-tip="edges"><label for="edges"><input id="edges" type="checkbox"> Monochrome Edge Detection Mode</label></div>
+        <div class="fields">
+          <div class="field" data-tip="dot"><label for="dot">Primary symbol</label><input id="dot" type="text" value="●"></div>
+          <div class="field" data-tip="background_symbol"><label for="background_symbol">Background symbol</label><input id="background_symbol" type="text" value="·"></div>
+        </div>
+        <p class="calibration-warning">Gunsaw may distort images if Size / Line Height are changed from their defaults! Adjust those values only if absolutely necessary, manual calibration WILL be needed afterwards! It is recommended to leave the values to their defaults!!!</p>
+        <div class="estimate" title="Empirically calibrated for Size 1.5, Line Height 2.0 and the ● symbol only."><div class="estimate-title">Estimated minimum sign size</div><strong id="estimate">3.6 × 3.6</strong><small>Sign Scale · Based on calibrated default settings. May differ if Size multiplier and Line-Height are manually changed</small></div>
+        <div class="buttons"><button id="reset" class="secondary" type="button">Reset defaults</button><button id="convert" type="button" disabled>Download text block</button></div>
+        <p id="status" class="status" role="status" aria-live="polite">Waiting for Python runtime…</p>
+      </section>
+      <section class="panel preview-panel" aria-label="Image preview">
+        <div class="preview-heading"><h2>Estimated In-Game Preview</h2><span class="muted" id="preview-info">"Pixel" preview</span></div>
+        <div class="preview-stage" id="preview-stage"><div id="empty-preview">Select an image to preview it here.</div><img id="preview" alt="Preview of converted ImageSaw dot grid" hidden></div>
+        <p class="muted footnote">This is an estimated preview of how the image will appear in-game once pasted onto a sign. If Size and Line-Height are changed, it may differ from the preview.</p>
+        <div class="output-panel" id="output-panel"><div class="preview-heading"><h2>Conversion result</h2><button id="copy" class="secondary" type="button" disabled>Copy text</button></div><p id="output-info" class="muted" aria-live="polite">Choose an image to generate its text block automatically.</p><textarea id="result" readonly aria-label="Generated Gunsaw text" placeholder="Your converted Gunsaw text will appear here automatically after you select an image."></textarea></div>
+      </section>
+    </div>
+    <footer>ImageSaw v8-7. Running script version 8 with WEB-GUI version 7. No data is saved online, everything is performed locally.</footer>
+  </main>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

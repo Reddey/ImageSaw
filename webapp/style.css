@@ -1,0 +1,63 @@
+:root{color-scheme:dark;font-family:Segoe UI,Arial,sans-serif;background:#171717;color:#eee}*{box-sizing:border-box}body{margin:0}.shell{max-width:1250px;margin:auto;padding:28px 22px}.header{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:22px}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:#bba47c;margin:0 0 7px}h1{font-size:35px;letter-spacing:-.04em;margin:0}h1 span{font-weight:400;color:#bba47c}.header p:not(.eyebrow){font-size:13px;color:#aaa;max-width:690px}.runtime{border:1px solid #525252;border-radius:30px;padding:9px 14px;font-size:12px;white-space:nowrap;color:#d9c08c}.runtime.ready{color:#9adbb6;border-color:#47775b}.runtime.error{color:#ff9898;border-color:#994d4d}.workspace{display:grid;grid-template-columns:minmax(310px,390px) minmax(0,1fr);gap:18px}.panel{background:#222;border:1px solid #363636;border-radius:14px;padding:21px;min-width:0}.controls{max-height:calc(100vh - 170px);overflow-y:auto}h2{font-size:16px;margin:0 0 14px}h2:not(:first-child){margin-top:25px}.upload{display:block;background:#323232;border:1px dashed #777;padding:16px;border-radius:9px;text-align:center;cursor:pointer;font-weight:600}.upload:hover{border-color:#c6ad7e;background:#38342c}.upload small{display:block;color:#aaa;font-weight:400;margin-top:5px}input[type=file]{width:100%;font-size:11px;margin-top:8px;color:#aaa}input[type=file]::file-selector-button{display:none}.muted{color:#a4a4a4;font-size:12px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{min-width:0}.field label{display:block;font-size:12px;margin-bottom:6px;color:#ddd}.field input:not([type=checkbox]):not([type=color]){width:100%;background:#303030;border:1px solid #555;border-radius:6px;color:#f3f3f3;padding:10px;font:inherit;font-size:14px}.field input:focus{outline:2px solid #a99062;outline-offset:1px}.help{display:inline-flex;align-items:center;justify-content:center;border:1px solid #777;border-radius:50%;width:14px;height:14px;font-size:10px;color:#aaa;margin-left:3px;cursor:help}.color-row{display:flex;gap:5px}.color-row input[type=color]{width:42px;min-width:42px;height:40px;background:#303030;border:1px solid #555;border-radius:6px;cursor:pointer}.checkbox-field{margin:18px 0}.checkbox-field label{cursor:pointer}.checkbox-field input{accent-color:#c3a46b}.estimate{background:#2c2c2c;border:1px solid #4b4b4b;border-radius:9px;padding:14px;margin-top:20px}.estimate-title{color:#bbb;font-size:12px}.estimate strong{display:block;font-size:25px;margin:6px 0}.estimate small{font-size:11px;color:#aaa}.buttons{display:flex;gap:9px;margin-top:17px}button{background:#bfa06d;color:#161616;font-weight:700;border:0;border-radius:7px;padding:11px 13px;cursor:pointer}button:hover:not(:disabled){filter:brightness(1.1)}button:disabled{opacity:.45;cursor:not-allowed}.buttons button:last-child{flex:1}.secondary{background:#383838;color:#eee;border:1px solid #626262}.status{font-size:12px;color:#b8b8b8;overflow-wrap:anywhere}.preview-panel{display:flex;flex-direction:column;gap:12px}.preview-heading{display:flex;justify-content:space-between;align-items:center;gap:10px}.preview-heading h2{margin:0}.preview-stage{background:#111;border:1px solid #444;border-radius:9px;min-height:340px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:18px;flex:1}.preview-stage img{max-width:100%;max-height:70vh;object-fit:contain;image-rendering:auto}.preview-stage #empty-preview{color:#888;font-size:13px;text-align:center}.footnote{line-height:1.5}.output-panel{margin-top:8px}.output-panel textarea{width:100%;height:160px;resize:vertical;background:#151515;color:#ddd;border:1px solid #555;border-radius:7px;padding:10px;font-family:Consolas,monospace;font-size:11px}.tooltip{position:fixed;z-index:1000;pointer-events:none;width:min(350px,calc(100vw - 24px));padding:11px 13px;background:#303030;border:1px solid #858585;border-radius:7px;box-shadow:0 8px 25px #000b;font-size:12px;line-height:1.45}.tooltip p{margin:0}.tooltip p+p{margin-top:8px}.tooltip .white{color:#f0f0f0}.tooltip .yellow{color:#f0ce69}.tooltip .red{color:#ff7777}footer{color:#777;font-size:11px;margin-top:18px}@media(max-width:800px){.workspace{grid-template-columns:1fr}.controls{max-height:none}.header{align-items:flex-start;flex-direction:column;gap:5px}.preview-stage{min-height:260px}.shell{padding:16px}.panel{padding:16px}}
+
+.output-panel textarea{min-height:190px}.output-panel textarea:placeholder-shown{color:#a4a4a4}.output-panel{border-top:1px solid #444;padding-top:18px}
+
+/*general theme thingies not that important, odnt want to make this too complicated / fancy.*/
+:root{background:#0D0D0D;color:#eeeeee}
+.shell{max-width:1250px}
+.eyebrow{color:#bcbcbc;text-transform:none;letter-spacing:0;font-size:12px}
+h1{letter-spacing:0;font-size:32px}
+h1 span{color:inherit}
+.runtime,.panel,.upload,.field input:not([type=checkbox]):not([type=color]),
+.color-row input[type=color],.estimate,button,.preview-stage,
+.output-panel textarea,.tooltip{border-radius:0}
+.runtime{color:#dddddd;border-color:#626262}
+.runtime.ready{color:#b8e0c4;border-color:#626262}
+.runtime.error{color:#ff9898;border-color:#626262}
+.panel{background:#171717;border-color:#444444}
+.upload{background:#171717;border-color:#666666}
+.upload:hover{background:#171717;border-color:#999999}
+.field input:focus{outline-color:#aaaaaa}
+.checkbox-field input{accent-color:#8c8c8c}
+.estimate{background:#171717;border-color:#555555}
+button{background:#171717;color:#ffffff;border:1px solid #777777}
+button:hover:not(:disabled){background:#666666;filter:none}
+.secondary{background:#171717;color:#eeeeee;border-color:#666666}
+.preview-stage{background:#171717}
+.hover-hint{margin:-7px 0 14px;line-height:1.4}
+footer{line-height:1.5}
+
+/*for the warning relating to calibration with the size and line height bullshit GOD i spent so long trying to figure that shit out.*/
+.calibration-warning{color:#f0ce69;font-size:12px;line-height:1.5;margin:16px 0 0}
+.estimate small{display:block;line-height:1.45}
+
+/*make the logo flamboyantly beautiful because expies deserve to love eachother.*/
+.rainbow-title {
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ff9900,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0066ff,
+        #cc00ff,
+        #ff0000
+    );
+
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: rainbow-shift 5s linear infinite;
+}
+
+@keyframes rainbow-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
