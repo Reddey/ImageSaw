@@ -13,7 +13,13 @@ Monochrome Edge-Detection (MCED). Uses an algorithm to detect edges in uploaded 
 
 Notice: The size and line-height arguments are best left untouched! By default, they are configured to generate images at an aspect ratio of 1:1. If changed, you will need to manually calibrate them until the image looks right in-game! If you wish to increase the size of the image in-game, increase the image resolution up to AT MOST 120x120. Anything higher will severely affect performance.
 
-[Keep track of progress in Issues at the to-do list.](https://github.com/Reddey/ImageSaw/issues/1)
+# Utilization:
+1) Import image you wish to convert
+2) Tweak settings to your liking (Try to avoid changing Size Multiplier and Line Height
+3) Copy the text generated below the preview window (Or alternatively, save it for later with the "Download Text Block" button THEN copy it from the saved .txt file)
+4) Place down a sign in the Gunsaw Level Editor, and set its scale to the numbers given in the size estimator (These will only line up if you do not change Size Multiplier and Line Height)
+5) Paste the text generated earlier into the text field for the sign.
+It is preferred to try to keep character count below ~30k for ideal performance. Higher will work but may cause some performance issues.
 
 # Development History
 
