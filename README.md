@@ -6,6 +6,7 @@ Relies on Python, Pillow, and tkinter. For now, not publicly released although i
 Currently there are two modes available: 
 
 Full Color mode. This allows you to add two or three high detail, full color pictures in near proximity of eachother.
+
 Monochrome Edge-Detection (MCED). Uses an algorithm to detect edges in uploaded images, and converts the images into a much simpler, less demanding form of ASCII art usable in-game.
 
 Notice: The size and line-height arguments are best left untouched! By default, they are configured to generate images at an aspect ratio of 1:1. If changed, you will need to manually calibrate them until the image looks right in-game! If you wish to increase the size of the image in-game, increase the image resolution up to AT MOST 120x120. Anything higher will severely affect performance.
