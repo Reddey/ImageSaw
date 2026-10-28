@@ -21,3 +21,6 @@ ImageSaw v5 Palette Functionality (Allows for aggressive optimization if so desi
 
 ImageSaw v6 Monochrome Edge-Detection mode (Most aggressive optimization, worst image quality. The example in this picture weighed in at 5000 characters.)
 ![MCED Mode](https://github.com/user-attachments/assets/9038a6e2-9c79-41bb-bda1-ea490a490bdb)
+
+ImageSaw v7-6 GUI
+![Graphical User Interface for ImageSaw v7-6]("https://github.com/user-attachments/assets/2b8db5ca-290f-4c56-a1c1-5c7256e877fe")
