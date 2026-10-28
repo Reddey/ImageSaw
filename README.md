@@ -13,6 +13,8 @@ Notice: The size and line-height arguments are best left untouched! By default, 
 
 [Keep track of progress in Issues at the to-do list.](https://github.com/Reddey/ImageSaw/issues/1)
 
+# Development History
+
 Ingame example 1 (Full color, 40k Chars, 470fps stable)
 ![Ingame Example](https://github.com/user-attachments/assets/365299d9-2f01-416d-a5ef-487556461d2a)
 
@@ -28,3 +30,7 @@ ImageSaw v6 Monochrome Edge-Detection mode (Most aggressive optimization, worst 
 ImageSaw v7-6 Local GUI
 ![Graphical User Interface for ImageSaw v7-6](https://github.com/user-attachments/assets/2b8db5ca-290f-4c56-a1c1-5c7256e877fe)
 ImageSaw v7-6 features a GUI for the localized program. Eventually post web-release I might release the local version with this GUI. For now this is what the Web-GUI will be based on.
+
+ImageSaw v8-7 Web App
+![Web App for ImageSaw v8-7](https://github.com/user-attachments/assets/c9137e09-89ab-45df-af6c-cc8f60e9dd5b)
+ImageSaw v8-7 in functionality is identical to v7-6. Both have the same relative backend, the main difference being the GUI. 7-6 is a standalone app you can run on your computer, while 8-7 is an online Web App that you can use without downloading any files. No files are uploaded, no files are stored, everything is done locally, so you can trust the images you upload are safely still in your hands.
