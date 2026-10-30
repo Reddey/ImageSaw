@@ -256,3 +256,64 @@ $('copy').addEventListener('click',async()=>{
   catch(e){$('result').focus();$('result').select();setStatus('Clipboard permission denied. Select and copy the text manually.');}
 });
 setupTooltips();estimate();initPython();
+
+//help menu
+const helpButton = document.getElementById("helpButton");
+const helpModal = document.getElementById("helpModal");
+const closeHelp = document.getElementById("closeHelp");
+
+let previousFocus = null;
+
+function openHelpModal() {
+    previousFocus = document.activeElement;
+    helpModal.hidden = false;
+    closeHelp.focus();
+}
+
+function closeHelpModal() {
+    helpModal.hidden = true;
+    previousFocus?.focus();
+}
+
+helpButton.addEventListener("click", openHelpModal);
+
+closeHelp.addEventListener("click", closeHelpModal);
+
+//click outside popup to close
+helpModal.addEventListener("click", (event) => {
+    if (event.target === helpModal) {
+        closeHelpModal();
+    }
+});
+
+//escape key to close
+document.addEventListener("keydown", (event) => {
+    if (helpModal.hidden) return;
+
+    if (event.key === "Escape") {
+        closeHelpModal();
+    }
+
+    //keep keyboard focus in the popup
+    if (event.key === "Tab") {
+        const focusable = [...helpModal.querySelectorAll(
+            'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        )].filter(el => !el.disabled && el.getClientRects().length);
+
+        if (!focusable.length) {
+            event.preventDefault();
+            return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
+    }
+});

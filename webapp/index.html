@@ -12,6 +12,7 @@
     <header class="header">
       <div><p class="eyebrow">Powered by Python, Pillow and Pyodide. Special thanks to JohnnyEnglish and u/BaronGunsawFanboy!</p><h1 class="rainbow-title">ImageSaw v8-7</h1>
       <p>Bringing your favorite images to Gunsaw, while retaining full Vanilla compatibility! (Copyright, Trademark, Rights ReddeyCorp (Not really :3)) Nah but for real, made by Reddey.</p></div>
+      <button type="button" id="helpButton">Operating Instructions</button>
       <div class="runtime" id="runtime" role="status" aria-live="polite">Loading Python…</div>
     </header>
     <div class="workspace">
@@ -52,5 +53,51 @@
   <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
   <script src="app.js" defer></script>
+  <div id="helpModal" class="help-modal" hidden>
+    <div class="help-modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="helpTitle">
+
+        <button type="button"
+                id="closeHelp"
+                class="help-close"
+                aria-label="Close">×</button>
+
+        <h2 id="helpTitle">How to Use ImageSaw</h2>
+
+        <ol>
+            <li>
+              <strong>Select image to be converted:</strong> Select the image you wish to convert in the Source image section
+            </li>
+
+            <li>
+              <strong>Configure conversion settings:</strong> Configure the conversion as desired by tweaking the Conversion settings. For more info on what each option does, hover over them.
+            </li>
+
+            <li>
+              <strong>Saving the converted text block:</strong> Either copy the text block from the Conversion Result box if planning to use it immediately, or click the "Download text block" button to download the result as a .txt file for later use.
+            </li>
+
+            <li>
+              <strong>Using the converted text block Ingame:</strong> In the Gunsaw level editor, place down an Info Board / Sign
+            </li>
+
+            <li>
+              <strong>Configuring Info Board / Sign:</strong> Set the Info Board's / Sign's scale to the recommended Estimated minimum sign size (If you changed the Size multiplier and / or Line height settings, this will be inaccurate! You will need to manually figure out the scale.)
+            </li>
+
+            <li>
+              <strong>Pasting the converted image in:</strong> In the text field for the Info Board / Sign, paste your text block. Keep in mind that for longer text blocks (Above 100k Characters) you may experience a frame drop or lower FPS in the editor. Try to generate your initial conversion with this in mind.
+            </li>
+        </ol>
+
+        <p class="help-warning">
+            Warning: Changing Size Multiplier or Line Height
+            from their defaults may distort the image!
+        </p>
+
+    </div>
+  </div>
 </body>
 </html>
