@@ -1,4 +1,4 @@
-# ImageSaw V8-9 (30/10/2026):
+# ImageSaw V8-9 (17/11/2026):
 Updated WebGUI to version 9. Fixed an issue that caused Monochrome Edge Detection mode to break when using default variables. Backend remains identical.
 
 # ImageSaw V8-8 (30/10/2026):
